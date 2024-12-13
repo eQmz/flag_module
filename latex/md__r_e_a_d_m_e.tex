@@ -1,0 +1,123 @@
+\chapter{LOG\+\_\+\+MODULE}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{LOG\_MODULE@{LOG\_MODULE}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+This project is a library (\doxylink{flag__module_8h}{flag\+\_\+module.\+h} file with the extra layer \doxylink{usr__flags_8h}{usr\+\_\+flags.\+h} file) which helps to generate flags of 1 bit size.
+
+The project purpose is to facilitate the creation of flags with a 1 bit size, because in some cases, such as in the embedded systems, resources are more limited. Therefore, you have to take care of this aspect. If you are going to use flags in your project, this library can help you to save some memory.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Usage example}{Usage example}}\label{md__r_e_a_d_m_e_autotoc_md1}
+The first thing that you need to do is map your flags in the extra layer \doxylink{usr__flags_8h}{usr\+\_\+flags.\+h} (you can create your own .h file based on the structure of the \doxylink{usr__flags_8h}{usr\+\_\+flags.\+h} file and add it to the project build)
+
+The following code is an example of what the extra layer file should look like\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#ifndef\ \_USR\_FLAGS\_}
+\DoxyCodeLine{\#define\ \_USR\_FLAGS\_}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#include\ "{}flag\_module.h"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#define\ myFlag\ FLAG\_0}
+\DoxyCodeLine{\#define\ ursFlag\ FLAG\_1}
+\DoxyCodeLine{\#define\ nameFlag\ FLAG\_2}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#endif\ //\_USR\_FLAGS\_}
+
+\end{DoxyCode}
+ In the example above we specify that the original "{}\+FLAG\+\_\+0"{} name is going to be renamed "{}my\+Flag"{}, or on the other words, we linked the "{}\+FLAG\+\_\+0"{} MACRO with my\+Flag MACRO.
+
+After the user flag mapping, you can add the extra layer to your main project.
+
+An example of a main code is shown as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#include\ "{}stdio.h"{}}
+\DoxyCodeLine{\#include\ "{}usr\_flags.h"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{CREATE\_FLAGS();}
+\DoxyCodeLine{}
+\DoxyCodeLine{int\ main(int\ argc,\ char\ const\ *argv[])}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ ursFlag\ =\ 1;}
+\DoxyCodeLine{\ \ \ printf("{}ursFlag:\ \%d\(\backslash\)n"{},\ ursFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ ursFlag\ =\ 0;}
+\DoxyCodeLine{\ \ \ printf("{}ursFlag:\ \%d\(\backslash\)n"{},\ ursFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ myFlag\ =\ 1;}
+\DoxyCodeLine{\ \ \ printf("{}myFlag:\ \%d\(\backslash\)n"{},\ myFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ myFlag\ =\ 0;}
+\DoxyCodeLine{\ \ \ printf("{}myFlag:\ \%d\(\backslash\)n"{},\ myFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ return\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Create the flags 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{CREATE\_FLAGS();}
+
+\end{DoxyCode}
+
+\item Set any value to your flag 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ursFlag\ =\ 1;}
+
+\end{DoxyCode}
+
+\item Use your flag (you can print the flag value or you can validate the status) 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{printf("{}ursFlag:\ \%d\(\backslash\)n"{},\ ursFlag);}
+
+\end{DoxyCode}
+
+\end{DoxyEnumerate}
+
+{\bfseries{Example output\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ursFlag:\ 0}
+\DoxyCodeLine{ursFlag:\ 1}
+\DoxyCodeLine{myFlag:\ 1}
+\DoxyCodeLine{myFlag:\ 0}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Compilation}{Compilation}}\label{md__r_e_a_d_m_e_autotoc_md2}
+First you have to download the library (or you can clone or add to your project as a submodule). The library location in your workspace should look as follows\+:
+
+
+
+Then, the next step for compilation it can be realized using the next gcc command on the terminal\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{gcc\ -\/g\ main.c\ -\/I\ flag\_module\ -\/o\ main.exe\ }
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Execution}{Execution}}\label{md__r_e_a_d_m_e_autotoc_md3}
+To excecute the main.\+exe file you can use the next command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./main.exe}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Message}{Message}}\label{md__r_e_a_d_m_e_autotoc_md4}
+I hope you enjoy this code, I know there are many ways to make a 1-\/bit flag (such as using bitwise operations) but I consider this to be a more user-\/friendly way to create and manage 1-\/bit flags.
+
+On the other hand, you can use this library with different source codes, such as other libraries in a simultaneous way.
+
+And remember, use
+
+👍"{}\+Hello Dog! 🐶"{}
+
+Instead of
+
+✖️"{}\+Hello World!"{}
+
+ 

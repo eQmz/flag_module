@@ -1,0 +1,143 @@
+\doxysection{C\+:/\+Users/a\+\_\+gc/\+Documents/\+Q/c/\+VS\+\_\+\+CODE/flag\+\_\+test/flag\+\_\+module/flag\+\_\+module.\+h}
+\hypertarget{_c_1_2_users_2a_gc_2_documents_2_q_2c_2_v_s__c_o_d_e_2flag_test_2flag_module_2flag_module_8h-example}{}\label{_c_1_2_users_2a_gc_2_documents_2_q_2c_2_v_s__c_o_d_e_2flag_test_2flag_module_2flag_module_8h-example}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//****************urs\_flags.h\ file****************}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef\ \_USR\_FLAGS\_}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_USR\_FLAGS\_}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{flag__module_8h}{flag\_module.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ myFlag\ FLAG\_0}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ ursFlag\ FLAG\_1}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ nameFlag\ FLAG\_2}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\_USR\_FLAGS\_}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//****************main.c\ file****************}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}stdio.h"{}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{usr__flags_8h}{usr\_flags.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{flag__module_8h_ae9d7ff9be4082ac445b4728a5f5d27f4}{CREATE\_FLAGS}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ main(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *argv[])}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ ursFlag\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}ursFlag:\ \%d\(\backslash\)n"{}},\ ursFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ ursFlag\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}ursFlag:\ \%d\(\backslash\)n"{}},\ ursFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ myFlag\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}myFlag:\ \%d\(\backslash\)n"{}},\ myFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ myFlag\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ printf(\textcolor{stringliteral}{"{}myFlag:\ \%d\(\backslash\)n"{}},\ myFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ Output:}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ ursFlag:\ 0}
+\DoxyCodeLine{\ \ ursFlag:\ 1}
+\DoxyCodeLine{\ \ myFlag:\ 1}
+\DoxyCodeLine{\ \ myFlag:\ 0}
+
+\end{DoxyCode}
+ \begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024
+\end{DoxyCopyright}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef\ \_FLAG\_MODULE\_H\_}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_FLAG\_MODULE\_H\_}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}stdint.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_0\ flgs.f0}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_1\ flgs.f1}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_2\ flgs.f2}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_3\ flgs.f3}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_4\ flgs.f4}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_5\ flgs.f5}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_6\ flgs.f6}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_7\ flgs.f7}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_8\ flgs.f8}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_9\ flgs.f9}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_10\ flgs.f10}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_11\ flgs.f11}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_12\ flgs.f12}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_13\ flgs.f13}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_14\ flgs.f14}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_15\ flgs.f15}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_16\ flgs.f16}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_17\ flgs.f17}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_18\ flgs.f18}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_19\ flgs.f19}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_20\ flgs.f20}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_21\ flgs.f21}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_22\ flgs.f22}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_23\ flgs.f23}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_24\ flgs.f24}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_25\ flgs.f25}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_26\ flgs.f26}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_27\ flgs.f27}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_28\ flgs.f28}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_29\ flgs.f29}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_30\ flgs.f30}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_31\ flgs.f31}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_32\ fooFlgs.f0}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_33\ fooFlgs.f1}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_34\ fooFlgs.f2}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ FLAG\_USRNAME\ fooFlgs.f3}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ uint32\_t\ f0\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f1\ :\ 1;\ }
+\DoxyCodeLine{\ \ \ uint32\_t\ f2\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f3\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f4\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f5\ :\ 1;\ }
+\DoxyCodeLine{\ \ \ uint32\_t\ f6\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f7\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f8\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f9\ :\ 1;\ }
+\DoxyCodeLine{\ \ \ uint32\_t\ f10\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f11\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f12\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f13\ :\ 1;\ }
+\DoxyCodeLine{\ \ \ uint32\_t\ f14\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f15\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f16\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f17\ :\ 1;\ }
+\DoxyCodeLine{\ \ \ uint32\_t\ f18\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f19\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f20\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f21\ :\ 1;\ }
+\DoxyCodeLine{\ \ \ uint32\_t\ f22\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f23\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f24\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f25\ :\ 1;\ }
+\DoxyCodeLine{\ \ \ uint32\_t\ f26\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f27\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f28\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f29\ :\ 1;\ }
+\DoxyCodeLine{\ \ \ uint32\_t\ f30\ :\ 1;}
+\DoxyCodeLine{\ \ \ uint32\_t\ f31\ :\ 1;}
+\DoxyCodeLine{\}\mbox{\hyperlink{structflag__t}{flag\_t}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ CREATE\_FLAGS()\ static\ flag\_t\ flgs\ =\ \{\ 0\ \}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCodeInclude}
+ 

@@ -1,0 +1,54 @@
+\doxysection{C\+:/\+Users/a\+\_\+gc/\+Documents/\+Q/c/\+VS\+\_\+\+CODE/flag\+\_\+test/flag\+\_\+module/usr\+\_\+flags.\+h}
+\hypertarget{_c_1_2_users_2a_gc_2_documents_2_q_2c_2_v_s__c_o_d_e_2flag_test_2flag_module_2usr_flags_8h-example}{}\label{_c_1_2_users_2a_gc_2_documents_2_q_2c_2_v_s__c_o_d_e_2flag_test_2flag_module_2usr_flags_8h-example}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//****************main.c\ file****************}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}stdio.h"{}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{usr__flags_8h}{usr\_flags.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{flag__module_8h_ae9d7ff9be4082ac445b4728a5f5d27f4}{CREATE\_FLAGS}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ main(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *argv[])}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ ursFlag\ =\ 1;}
+\DoxyCodeLine{\ \ \ printf(\textcolor{stringliteral}{"{}ursFlag:\ \%d\(\backslash\)n"{}},\ ursFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ ursFlag\ =\ 0;}
+\DoxyCodeLine{\ \ \ printf(\textcolor{stringliteral}{"{}ursFlag:\ \%d\(\backslash\)n"{}},\ ursFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ myFlag\ =\ 1;}
+\DoxyCodeLine{\ \ \ printf(\textcolor{stringliteral}{"{}myFlag:\ \%d\(\backslash\)n"{}},\ myFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ myFlag\ =\ 0;}
+\DoxyCodeLine{\ \ \ printf(\textcolor{stringliteral}{"{}myFlag:\ \%d\(\backslash\)n"{}},\ myFlag);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{Output:}
+\DoxyCodeLine{\ \ \ }
+\DoxyCodeLine{ursFlag:\ 0}
+\DoxyCodeLine{ursFlag:\ 1}
+\DoxyCodeLine{myFlag:\ 1}
+\DoxyCodeLine{myFlag:\ 0}
+
+\end{DoxyCode}
+ \begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024
+\end{DoxyCopyright}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef\ \_USR\_FLAGS\_}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_USR\_FLAGS\_}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{flag__module_8h}{flag\_module.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ myFlag\ FLAG\_0}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ ursFlag\ FLAG\_1}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ nameFlag\ FLAG\_2}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\_USR\_FLAGS\_}}
+
+\end{DoxyCodeInclude}
+ 
